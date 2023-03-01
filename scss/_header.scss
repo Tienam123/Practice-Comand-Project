@@ -1,0 +1,99 @@
+/* ============ Header =========== */
+.header-page {
+	padding: 24px 0;
+	position: absolute;
+	width: 100%;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+
+	color: #ffffff;
+
+	.header-nav {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		width: 68px;
+		margin-right: 131px;
+		z-index: 2;
+	}
+
+	.menu__list {
+		display: flex;
+		gap: 30px;
+
+		.menu__item {
+			//Cтилизация пунктов (ли)
+			.menu__link {
+				text-decoration: none;
+				color: inherit;
+
+				padding: 10px 0;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #ff6c00;
+				}
+			}
+		}
+	}
+	.header-contatcs {
+		display: flex;
+		align-items: center;
+
+		.header-link {
+			// стилизация линков
+			text-decoration: none;
+			color: inherit;
+			&:hover,
+			&:focus,
+			&:active {
+				color: #ff6c00;
+			}
+		}
+		.header-button {
+			// стилизация кнопки
+			background-color: transparent;
+			border: 1px solid #ff6c00;
+			border-radius: 25px;
+			color: #ffffff;
+
+			margin-left: 44px;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: #ff6c00;
+				color: #000;
+			}
+			.button-link {
+				// стилизация ссылки в кнопке
+				display: inline-block;
+				text-decoration: none;
+				padding: 12px 20px;
+
+				letter-spacing: 0.09em;
+				text-transform: uppercase;
+
+				color: inherit;
+			}
+		}
+	}
+}
+
+/* ============ Header =========== */

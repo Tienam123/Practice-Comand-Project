@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/*=========================  Обнуление   ============================*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================  Обнуление  ==================== */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1.67;
+  color: var(--basic-text--);
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  --basic-text--: #555555;
+  --header-link-text: #ffffff;
+}
+
+/* ============ Header =========== */
+.header-page {
+  padding: 24px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-container .header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-container .logo {
+  display: flex;
+  align-items: center;
+  width: 68px;
+  margin-right: 131px;
+  z-index: 2;
+}
+.header-container .menu__list {
+  display: flex;
+  gap: 30px;
+}
+.header-container .menu__list .menu__item .menu__link {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0;
+}
+.header-container .menu__list .menu__item .menu__link:hover, .header-container .menu__list .menu__item .menu__link:focus, .header-container .menu__list .menu__item .menu__link:active {
+  color: #ff6c00;
+}
+.header-container .header-contatcs {
+  display: flex;
+  align-items: center;
+}
+.header-container .header-contatcs .header-link {
+  text-decoration: none;
+  color: inherit;
+}
+.header-container .header-contatcs .header-link:hover, .header-container .header-contatcs .header-link:focus, .header-container .header-contatcs .header-link:active {
+  color: #ff6c00;
+}
+.header-container .header-contatcs .header-button {
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  color: #ffffff;
+  margin-left: 44px;
+}
+.header-container .header-contatcs .header-button:hover, .header-container .header-contatcs .header-button:active, .header-container .header-contatcs .header-button:focus {
+  background-color: #ff6c00;
+  color: #000;
+}
+.header-container .header-contatcs .header-button .button-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 20px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* ============ Header =========== */
+/* ============ Main ============= */
+/* ======= Hero section ===== */
+.hero-main-block {
+  display: flex;
+}
+
+.hero-aside__menu {
+  display: block;
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 191px;
+  left: -69px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-aside__menu::before {
+  content: "  ";
+  background-color: #303030;
+  width: 60px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  transform: translatex(-100%);
+  left: -8px;
+  top: 18px;
+}
+.hero-aside__list {
+  display: inline-block;
+}
+.hero-aside__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.left-size {
+  width: 8.45%;
+  position: relative;
+}
+
+.hero-main {
+  width: 91.66%;
+  padding: 270px 526px 210px 100px;
+  background-size: cover;
+  background-image: url(../images/hero-backround.jpg);
+  color: wheat;
+}
+.hero-main__about-us {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-left: 80px;
+}
+.hero-main__about-us::before {
+  content: "  ";
+  background-color: rgba(157, 164, 189, 0.6);
+  width: 1px;
+  height: 60px;
+  display: block;
+  position: relative;
+  top: 38px;
+  left: -46px;
+  transform: rotate(90deg);
+}
+.hero-main__title {
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.hero-main__description {
+  width: 360px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  /* or 167% */
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* ======= Hero section ===== */
+/* ======= Section About-us ===== */
+.about-us-container-section {
+  display: flex;
+  gap: 30px;
+  padding: 120px 0;
+}
+
+.image-container__menu {
+  display: flex;
+  gap: 30px;
+}
+.image-container__item {
+  display: block;
+}
+
+.about-us-container__title-promo {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #303030;
+  margin-left: 80px;
+}
+.about-us-container__title-promo::before {
+  content: "  ";
+  background-color: rgba(157, 164, 189, 0.6);
+  width: 1px;
+  height: 60px;
+  display: block;
+  position: relative;
+  top: 36px;
+  left: -50px;
+  transform: rotate(90deg);
+}
+.about-us-container__title {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.about-us-container__subtitle {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-us-container__description {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-us-container__button {
+  margin-top: 42px;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  color: #000000;
+}
+.about-us-container__button:hover, .about-us-container__button:active, .about-us-container__button:focus {
+  background-color: #ff6c00;
+  color: #ffffff;
+}
+.about-us-container__link {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* ======= Section About-us ===== */
+/* ======= Section  Price ===== */
+/* ======= Section  Price ===== */
+/* ============ Main ============= */
+/* ============ Footer =========== */
+/* ============ Footer =========== */
